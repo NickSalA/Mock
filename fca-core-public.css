@@ -1,0 +1,845 @@
+:root {
+    /* Paleta Institucional (Modo Claro - Default) */
+    --fca-core-primary: #003066;
+    --fca-core-primary-hover: #002244;
+    --fca-core-accent: #A6894A;
+    --fca-core-accent-hover: #8f7440;
+    --fca-core-success: #16a34a;
+    --fca-core-error: #dc2626;
+    --fca-core-warning: #f59e0b;
+    --fca-core-info: #3b82f6;
+
+    --fca-core-bg: #f6f9fc;
+    --fca-core-surface: #ffffff;
+    --fca-core-surface-alt: #fafbfc;
+    --fca-core-text: #1e293b;
+    --fca-core-text-muted: #475569;
+    --fca-core-border: #e2e8f0;
+
+    --fca-core-radius: 10px;
+    --fca-core-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+    --fca-core-font-main: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+    --fca-core-font-heading: 'Outfit', 'Segoe UI', sans-serif;
+}
+
+[data-theme="dark"],
+.fca-theme-dark {
+    /* Paleta Dark Tech (Webinar, Landing Pages, etc) */
+    --fca-core-bg: #050a15;
+    --fca-core-surface: #0f172a;
+    --fca-core-surface-alt: #1e293b;
+    --fca-core-text: #e2e8f0;
+    --fca-core-text-muted: #94a3b8;
+    --fca-core-primary: #0ea5e9;
+    --fca-core-primary-hover: #38bdf8;
+    --fca-core-accent: #d4af37;
+    --fca-core-accent-hover: #b58f22;
+    --fca-core-border: rgba(255, 255, 255, 0.1);
+    --fca-core-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+   ESTRUCTURA Y CONTENEDORES
+========================================= */
+.fca-core-container {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: var(--fca-core-font-main);
+    color: var(--fca-core-text);
+}
+
+.fca-core-card {
+    background: var(--fca-core-surface);
+    border-radius: var(--fca-core-radius);
+    box-shadow: var(--fca-core-shadow);
+    overflow: hidden;
+    border: 1px solid var(--fca-core-border);
+}
+
+.fca-core-card-header {
+    background: var(--fca-core-primary);
+    padding: 28px 32px;
+    color: #ffffff;
+}
+
+.fca-core-card-header h2,
+.fca-core-card-header h3 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: var(--fca-core-font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff !important;
+}
+
+.fca-core-card-header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.fca-core-card-body {
+    padding: 32px;
+    background: var(--fca-core-surface);
+}
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+.fca-core-form {
+    font-family: var(--fca-core-font-main);
+}
+
+.fca-core-form-group {
+    margin-bottom: 20px;
+}
+
+.fca-core-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--fca-core-text);
+}
+
+.fca-core-form label .required {
+    color: var(--fca-core-error);
+}
+
+.fca-core-form input[type="text"],
+.fca-core-form input[type="email"],
+.fca-core-form input[type="tel"],
+.fca-core-form input[type="password"],
+.fca-core-form input[type="number"],
+.fca-core-form textarea,
+.fca-core-form select {
+    width: 100%;
+    background: var(--fca-core-surface-alt);
+    border: 1px solid var(--fca-core-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--fca-core-text);
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.fca-core-form input:focus,
+.fca-core-form textarea:focus,
+.fca-core-form select:focus {
+    border-color: var(--fca-core-primary);
+    box-shadow: 0 0 0 3px rgba(0, 48, 102, 0.1);
+}
+
+[data-theme="dark"] .fca-core-form input:focus,
+[data-theme="dark"] .fca-core-form select:focus,
+.fca-theme-dark .fca-core-form input:focus,
+.fca-theme-dark .fca-core-form select:focus {
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.fca-core-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7 9l3 3 3-3' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.fca-core-form input[type="file"] {
+    padding: 10px;
+    border: 2px dashed var(--fca-core-border);
+    background: var(--fca-core-surface-alt);
+    cursor: pointer;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+.fca-core-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--fca-core-font-heading);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fca-core-btn-block {
+    width: 100%;
+    display: flex;
+}
+
+.fca-core-btn-primary {
+    background: var(--fca-core-primary) !important;
+    color: #ffffff !important;
+}
+
+.fca-core-btn-primary:hover {
+    background: var(--fca-core-primary-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: var(--fca-core-shadow);
+}
+
+.fca-core-btn-accent {
+    background: var(--fca-core-accent) !important;
+    color: #ffffff !important;
+}
+
+.fca-core-btn-accent:hover {
+    background: var(--fca-core-accent-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: var(--fca-core-shadow);
+}
+
+.fca-core-btn-outline {
+    background: transparent !important;
+    color: var(--fca-core-primary) !important;
+    border: 1.5px solid var(--fca-core-primary) !important;
+}
+
+.fca-core-btn-outline:hover {
+    background: var(--fca-core-primary) !important;
+    color: #ffffff !important;
+}
+
+.fca-core-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* =========================================
+   ETIQUETAS (BADGES)
+========================================= */
+.fca-core-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: var(--fca-core-font-main);
+}
+
+.fca-core-badge-success {
+    background: rgba(22, 163, 74, 0.15);
+    color: var(--fca-core-success);
+}
+
+.fca-core-badge-pending {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--fca-core-warning);
+}
+
+.fca-core-badge-error {
+    background: rgba(220, 38, 38, 0.15);
+    color: var(--fca-core-error);
+}
+
+.fca-core-badge-info {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--fca-core-info);
+}
+
+/* =========================================
+   ALERTAS Y MENSAJES
+========================================= */
+.fca-core-alert {
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-family: var(--fca-core-font-main);
+    border-left: 4px solid transparent;
+}
+
+.fca-core-alert-success {
+    background: rgba(22, 163, 74, 0.08);
+    border-left-color: var(--fca-core-success);
+    color: var(--fca-core-success);
+}
+
+.fca-core-alert-warning {
+    background: rgba(245, 158, 11, 0.08);
+    border-left-color: var(--fca-core-warning);
+    color: var(--fca-core-warning);
+}
+
+.fca-core-alert-error {
+    background: rgba(220, 38, 38, 0.08);
+    border-left-color: var(--fca-core-error);
+    color: var(--fca-core-error);
+}
+
+.fca-core-alert-info {
+    background: rgba(59, 130, 246, 0.08);
+    border-left-color: var(--fca-core-info);
+    color: var(--fca-core-info);
+}
+
+/* =========================================
+   MODALES GLOBALES
+========================================= */
+.fca-core-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fca-core-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fca-core-modal-content {
+    background: var(--fca-core-surface);
+    border: 1px solid var(--fca-core-border);
+    border-radius: var(--fca-core-radius);
+    width: 90%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 32px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+    position: relative;
+    box-sizing: border-box;
+    transform: translateY(20px) scale(0.95);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    font-family: var(--fca-core-font-main);
+    color: var(--fca-core-text);
+}
+
+.fca-core-modal-overlay.active .fca-core-modal-content {
+    transform: translateY(0) scale(1);
+}
+
+.fca-core-modal-title {
+    font-family: var(--fca-core-font-heading);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--fca-core-text);
+}
+
+.fca-core-modal-desc {
+    font-size: 14px;
+    color: var(--fca-core-text-muted);
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.fca-core-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: var(--fca-core-text-muted);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.fca-core-modal-close:hover {
+    color: var(--fca-core-error);
+}
+
+/* =========================================
+   UTILIDADES
+========================================= */
+.fca-core-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(100, 116, 139, 0.3);
+    border-radius: 50%;
+    border-top-color: currentColor;
+    animation: fca-core-spin 0.8s linear infinite;
+    display: inline-block;
+}
+
+@keyframes fca-core-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fca-core-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .fca-core-container {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    .fca-core-card-header,
+    .fca-core-card-body,
+    .fca-core-modal-content {
+        padding: 20px;
+    }
+}
+
+/* =========================================
+   BARRA DE FILTROS CORE
+========================================= */
+.fca-core-filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fca-core-filter-btn {
+    background: var(--fca-core-surface-alt);
+    border: 1px solid var(--fca-core-border);
+    color: var(--fca-core-text-muted);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--fca-core-font-heading);
+    transition: all 0.2s ease;
+}
+
+.fca-core-filter-btn:hover {
+    background: var(--fca-core-border);
+    color: var(--fca-core-primary);
+}
+
+.fca-core-filter-btn.active {
+    background: var(--fca-core-primary);
+    border-color: var(--fca-core-primary);
+    color: #ffffff;
+}
+
+.fca-core-select-compact {
+    padding: 6px 32px 6px 12px;
+    border: 1px solid var(--fca-core-border);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--fca-core-text);
+    background-color: var(--fca-core-surface);
+    outline: none;
+    cursor: pointer;
+    min-width: 130px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7 9l3 3 3-3' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+}
+
+/* =========================================
+   TABLAS CORE
+========================================= */
+.fca-core-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 24px;
+    border-radius: var(--fca-core-radius);
+    border: 1px solid var(--fca-core-border);
+    box-shadow: var(--fca-core-shadow);
+}
+
+.fca-core-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background: var(--fca-core-surface);
+    font-size: 14px;
+}
+
+.fca-core-table thead {
+    background: var(--fca-core-primary);
+    color: #ffffff;
+}
+
+.fca-core-table th {
+    padding: 16px 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--fca-core-font-heading);
+}
+
+.fca-core-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--fca-core-border);
+    color: var(--fca-core-text);
+}
+
+.fca-core-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.fca-core-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.fca-core-table tbody tr:hover {
+    background: var(--fca-core-surface-alt);
+}
+
+/* =========================================
+   GRID Y TARJETAS DE CONTENIDO (CARDS)
+========================================= */
+.fca-core-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.fca-core-content-card {
+    background: var(--fca-core-surface);
+    border: 1px solid var(--fca-core-border);
+    border-radius: var(--fca-core-radius);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.fca-core-content-card:hover {
+    box-shadow: var(--fca-core-shadow);
+    transform: translateY(-2px);
+}
+
+.fca-core-content-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 18px 24px;
+    background: var(--fca-core-surface-alt);
+    border-bottom: 1px solid var(--fca-core-border);
+    gap: 12px;
+}
+
+.fca-core-content-card-header h3 {
+    margin: 0;
+    font-size: 15px;
+    color: var(--fca-core-primary);
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: var(--fca-core-font-heading);
+}
+
+.fca-core-content-card-body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================
+   FILAS DE INFORMACIÓN Y CAMPOS CORE
+========================================= */
+.fca-core-info-row {
+    margin-bottom: 14px;
+}
+
+.fca-core-info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--fca-core-text-muted);
+    font-weight: 700;
+    display: block;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.fca-core-info-value {
+    font-size: 14px;
+    color: var(--fca-core-text);
+    font-weight: 600;
+    line-height: 1.4;
+    display: block;
+}
+
+/* =========================================
+   CONTENEDORES Y TARJETAS EXTRA
+========================================= */
+.fca-core-container-wide {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: var(--fca-core-font-main);
+    color: var(--fca-core-text);
+}
+
+.fca-core-card-narrow {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.fca-core-card-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.fca-core-card-header a {
+    color: #ffffff;
+    text-decoration: underline;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.fca-core-card-header a:hover {
+    opacity: 1;
+}
+
+.fca-core-text-center {
+    text-align: center !important;
+}
+
+.fca-core-btn-header {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 13px;
+}
+
+.fca-core-btn-header:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+}
+
+.fca-core-btn-sm {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+/* =========================================
+   PAGINACIÓN CORE
+========================================= */
+.fca-core-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--fca-core-border);
+    font-family: var(--fca-core-font-main);
+}
+
+.fca-core-pagination-info {
+    font-size: 14px;
+    color: var(--fca-core-text-muted);
+    font-weight: 500;
+}
+
+.fca-core-pagination-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.fca-core-pagination-btn {
+    padding: 8px 16px;
+    background: var(--fca-core-surface);
+    border: 1.5px solid var(--fca-core-primary);
+    border-radius: 6px;
+    color: var(--fca-core-primary);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: var(--fca-core-font-heading);
+}
+
+.fca-core-pagination-btn:hover:not(:disabled) {
+    background: var(--fca-core-primary);
+    color: #ffffff;
+}
+
+.fca-core-pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   PREVIEWS / CONTENEDORES DE ARCHIVOS
+========================================= */
+.fca-core-preview-box {
+    border: 2px dashed var(--fca-core-border);
+    border-radius: 8px;
+    padding: 24px;
+    background: var(--fca-core-surface-alt);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fca-core-preview-placeholder {
+    color: var(--fca-core-text-muted);
+    font-size: 14px;
+}
+
+.fca-core-preview-img {
+    max-width: 100%;
+    max-height: 160px;
+    border-radius: 4px;
+    box-shadow: var(--fca-core-shadow);
+}
+
+/* =========================================
+   TARJETAS DE SIDEBAR CORE
+========================================= */
+.fca-core-sidebar-card {
+    background: var(--fca-core-surface);
+    border: 1px solid var(--fca-core-border);
+    border-radius: var(--fca-core-radius);
+    box-shadow: var(--fca-core-shadow);
+    padding: 24px;
+    font-family: var(--fca-core-font-main);
+    box-sizing: border-box;
+}
+
+.fca-core-sidebar-header {
+    border-bottom: 2px solid var(--fca-core-accent);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+
+
+.fca-core-sidebar-title {
+    color: var(--fca-core-primary);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: var(--fca-core-font-heading);
+}
+
+.fca-core-sidebar-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--fca-core-text-muted);
+    margin: 0 0 20px 0;
+}
+
+.fca-core-sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fca-core-sidebar-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--fca-core-surface);
+    border: 1px solid var(--fca-core-border);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 13.5px;
+    color: var(--fca-core-text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.fca-core-sidebar-btn:hover {
+    background: var(--fca-core-surface-alt);
+    border-color: var(--fca-core-border);
+    color: var(--fca-core-primary);
+    transform: translateY(-1px);
+    box-shadow: var(--fca-core-shadow);
+}
+
+/* =========================================
+   CONTROLES DE CONTRASEÑA CORE
+========================================= */
+.fca-core-password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.fca-core-password-wrapper input {
+    padding-right: 44px !important;
+}
+
+.fca-core-toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    color: var(--fca-core-text-muted);
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.fca-core-toggle-password:hover {
+    color: var(--fca-core-accent);
+}

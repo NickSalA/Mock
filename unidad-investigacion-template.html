@@ -1,0 +1,785 @@
+<style>
+/* ==========================================================================
+   BANNER OFICIAL
+   ========================================================================== */
+.fca-ui-banner-img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   SECCIÓN INTRO — QUIÉNES SOMOS
+   ========================================================================== */
+.fca-ui-intro-heading,
+.fca-ui-intro-heading h1,
+.fca-ui-intro-heading h2,
+.fca-ui-intro-heading h3,
+.fca-ui-intro-heading h4,
+.fca-ui-intro-heading h5,
+.fca-ui-intro-heading h6,
+.fca-ui-intro-heading .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-primary) !important;
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.fca-ui-intro-text,
+.fca-ui-intro-text *,
+.fca-ui-intro-text p {
+    font-family: var(--fca-core-font-main) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    color: var(--fca-core-text) !important;
+}
+
+/* ==========================================================================
+   TARJETAS DE MISIÓN Y VISIÓN
+   ========================================================================== */
+.fca-ui-mv-card {
+    background-color: var(--fca-core-surface-alt) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    border-radius: var(--fca-core-radius) !important;
+    padding: 24px !important;
+    margin-bottom: 20px !important;
+}
+
+.fca-ui-mv-card:last-child {
+    margin-bottom: 0 !important;
+}
+
+.fca-ui-mv-title,
+.fca-ui-mv-title h1,
+.fca-ui-mv-title h2,
+.fca-ui-mv-title h3,
+.fca-ui-mv-title h4,
+.fca-ui-mv-title h5,
+.fca-ui-mv-title h6,
+.fca-ui-mv-title .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-primary) !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.fca-ui-mv-text,
+.fca-ui-mv-text *,
+.fca-ui-mv-text p {
+    font-family: var(--fca-core-font-main) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.55 !important;
+    color: var(--fca-core-text) !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   SECCIÓN DEL DIRECTOR
+   ========================================================================== */
+.fca-ui-director-section {
+    background-color: var(--fca-core-surface) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    border-radius: var(--fca-core-radius) !important;
+    box-shadow: var(--fca-core-shadow) !important;
+    padding: 16px 40px !important;
+    margin: 32px 0;
+}
+
+.fca-ui-director-label h1,
+.fca-ui-director-label h2,
+.fca-ui-director-label h3,
+.fca-ui-director-label h4,
+.fca-ui-director-label h5,
+.fca-ui-director-label h6,
+.fca-ui-director-label .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-text-muted) !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+    margin: 0 !important;
+    padding-left: 20px !important;
+    border-left: 4px solid var(--fca-core-accent) !important;
+}
+
+.fca-ui-director-name .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-primary) !important;
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    margin: 0px 0 4px 0 !important;
+    padding-left: 20px !important;
+    border-left: 4px solid var(--fca-core-accent) !important;
+}
+
+.fca-ui-director-photo img {
+    width: 320px !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    object-position: center 15% !important;
+    border-radius: var(--fca-core-radius) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05) !important;
+    display: block !important;
+}
+
+.fca-ui-bio-text,
+.fca-ui-bio-text *,
+.fca-ui-bio-text p {
+    font-family: var(--fca-core-font-main) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    color: var(--fca-core-text) !important;
+}
+
+.fca-ui-bio-contact .elementor-widget-container {
+    font-family: var(--fca-core-font-main) !important;
+    font-size: 1rem !important;
+    padding: 12px 12px !important;
+    background-color: var(--fca-core-surface-alt) !important;
+    border-radius: 6px !important;
+    border-left: 3px solid var(--fca-core-primary) !important;
+    display: inline-block !important;
+    margin-bottom: 4px !important;
+}
+
+.fca-ui-bio-contact a {
+    color: var(--fca-core-primary) !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+.fca-ui-bio-contact a:hover {
+    color: var(--fca-core-accent) !important;
+}
+
+.fca-ui-tag-item {
+    display: inline-block !important;
+    width: auto !important;
+    margin-right: 8px !important;
+}
+
+.fca-ui-tag-item h1,
+.fca-ui-tag-item h2,
+.fca-ui-tag-item h3,
+.fca-ui-tag-item h4,
+.fca-ui-tag-item h5,
+.fca-ui-tag-item h6,
+.fca-ui-tag-item span,
+.fca-ui-tag-item .elementor-heading-title {
+    display: inline-block !important;
+    background-color: var(--fca-core-surface-alt) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    padding: 6px 12px !important;
+    border-radius: 20px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: var(--fca-core-text-muted) !important;
+    font-family: var(--fca-core-font-main) !important;
+}
+
+/* ==========================================================================
+   PILARES DE INVESTIGACIÓN — TARJETAS CORE
+   ========================================================================== */
+.fca-ui-pilar-card {
+    background: var(--fca-core-surface) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    border-radius: var(--fca-core-radius) !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    margin: 32px 0 !important;
+}
+
+.fca-ui-pilar-card > .elementor-widget-wrap,
+.fca-ui-pilar-card > .elementor-column-wrap,
+.fca-ui-pilar-card > .elementor-element-populated {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    flex: 1 1 auto !important;
+    padding: 24px !important;
+    box-sizing: border-box !important;
+}
+
+.fca-ui-pilar-card:nth-child(2) {
+    margin: 32px 24px !important;
+}
+
+.fca-ui-pilar-card:hover {
+    box-shadow: var(--fca-core-shadow) !important;
+    transform: translateY(-2px) !important;
+}
+
+.fca-ui-pilar-icon {
+    margin-bottom: 20px !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.fca-ui-pilar-icon .elementor-heading-title,
+.fca-ui-pilar-icon h1,
+.fca-ui-pilar-icon h2,
+.fca-ui-pilar-icon h3,
+.fca-ui-pilar-icon h4,
+.fca-ui-pilar-icon h5,
+.fca-ui-pilar-icon h6 {
+    font-size: 2.8rem !important;
+    width: 70px !important;
+    height: 70px !important;
+    background: var(--fca-core-surface-alt) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.fca-ui-pilar-title,
+.fca-ui-pilar-title h1,
+.fca-ui-pilar-title h2,
+.fca-ui-pilar-title h3,
+.fca-ui-pilar-title h4,
+.fca-ui-pilar-title h5,
+.fca-ui-pilar-title h6,
+.fca-ui-pilar-title .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-primary) !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 12px !important;
+}
+
+.fca-ui-pilar-desc,
+.fca-ui-pilar-desc p,
+.fca-ui-pilar-desc .elementor-text-editor,
+.fca-ui-pilar-desc .elementor-text-editor p {
+    font-family: var(--fca-core-font-main) !important;
+    color: var(--fca-core-text) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+}
+
+.fca-ui-pilar-btn,
+.fca-ui-pilar-btn-outline,
+.fca-ui-btn-grupos {
+    margin-top: auto !important;
+}
+
+.fca-ui-pilar-btn a,
+.fca-ui-pilar-btn button,
+.fca-ui-pilar-btn .elementor-button,
+.fca-ui-btn-grupos a,
+.fca-ui-btn-grupos button,
+.fca-ui-btn-grupos .elementor-button {
+    background-color: var(--fca-core-primary) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-family: var(--fca-core-font-heading) !important;
+    padding: 13px 28px !important;
+    transition: all 0.2s ease !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+}
+
+.fca-ui-pilar-btn a:hover,
+.fca-ui-pilar-btn button:hover,
+.fca-ui-pilar-btn .elementor-button:hover,
+.fca-ui-btn-grupos a:hover,
+.fca-ui-btn-grupos button:hover,
+.fca-ui-btn-grupos .elementor-button:hover {
+    background-color: var(--fca-core-primary-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+.fca-ui-pilar-btn-outline a,
+.fca-ui-pilar-btn-outline button,
+.fca-ui-pilar-btn-outline .elementor-button {
+    background-color: transparent !important;
+    color: var(--fca-core-primary) !important;
+    border: 1.5px solid var(--fca-core-primary) !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-family: var(--fca-core-font-heading) !important;
+    padding: 12px 28px !important;
+    transition: all 0.2s ease !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+.fca-ui-pilar-btn-outline a:hover,
+.fca-ui-pilar-btn-outline button:hover,
+.fca-ui-pilar-btn-outline .elementor-button:hover {
+    background-color: var(--fca-core-primary) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   OBJETIVOS Y PERSONAL ADMINISTRATIVO
+   ========================================================================== */
+/* Forzar estiramiento de altura (equal height) para Objetivos y Personal Administrativo */
+.elementor-section:has(.fca-ui-objetivos-card) > .elementor-container,
+.elementor-section:has(.fca-ui-personal-card) > .elementor-container,
+.elementor-container:has(.fca-ui-objetivos-card),
+.elementor-container:has(.fca-ui-personal-card),
+.elementor-row:has(.fca-ui-objetivos-card),
+.elementor-row:has(.fca-ui-personal-card),
+.e-con:has(.fca-ui-objetivos-card),
+.e-con:has(.fca-ui-personal-card),
+.e-con-inner:has(.fca-ui-objetivos-card),
+.e-con-inner:has(.fca-ui-personal-card) {
+    display: flex !important;
+    align-items: stretch !important;
+    align-content: stretch !important;
+    margin-top: 32px;
+}
+
+.fca-ui-objetivos-card,
+.fca-ui-personal-card {
+    background: var(--fca-core-surface) !important;
+    border: 1px solid var(--fca-core-border) !important;
+    border-radius: var(--fca-core-radius) !important;
+    padding: 24px !important;
+}
+
+.fca-ui-objetivos-title,
+.fca-ui-objetivos-title h1,
+.fca-ui-objetivos-title h2,
+.fca-ui-objetivos-title h3,
+.fca-ui-objetivos-title h4,
+.fca-ui-objetivos-title h5,
+.fca-ui-objetivos-title h6,
+.fca-ui-objetivos-title .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-primary) !important;
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 20px 0 !important;
+}
+
+.fca-ui-objetivos-lista ul,
+.fca-ui-objetivos-lista .elementor-text-editor ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fca-ui-objetivos-lista ul li,
+.fca-ui-objetivos-lista .elementor-text-editor ul li {
+    position: relative !important;
+    padding-left: 32px !important;
+    margin-bottom: 16px !important;
+    color: var(--fca-core-text) !important;
+    font-family: var(--fca-core-font-main) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+}
+
+.fca-ui-objetivos-lista ul li::before,
+.fca-ui-objetivos-lista .elementor-text-editor ul li::before {
+    content: '✓' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 2px !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: rgba(22, 163, 74, 0.1) !important;
+    color: var(--fca-core-success) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+}
+
+/* ==========================================================================
+   PERSONAL ADMINISTRATIVO
+   ========================================================================== */
+.fca-ui-personal-title,
+.fca-ui-personal-title h1,
+.fca-ui-personal-title h2,
+.fca-ui-personal-title h3,
+.fca-ui-personal-title h4,
+.fca-ui-personal-title h5,
+.fca-ui-personal-title h6,
+.fca-ui-personal-title .elementor-heading-title {
+    font-family: var(--fca-core-font-heading) !important;
+    color: var(--fca-core-primary) !important;
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.fca-ui-personal-item,
+.fca-ui-personal-item p,
+.fca-ui-personal-item .elementor-text-editor,
+.fca-ui-personal-item .elementor-text-editor p {
+    font-family: var(--fca-core-font-main) !important;
+    margin-bottom: 8px !important;
+}
+
+.fca-ui-personal-item strong,
+.fca-ui-personal-item b,
+.fca-ui-personal-item .elementor-text-editor strong,
+.fca-ui-personal-item .elementor-text-editor b {
+    display: block !important;
+    color: var(--fca-core-text) !important;
+    font-size: 1.1rem !important;
+}
+
+.fca-ui-personal-item a,
+.fca-ui-personal-item .elementor-text-editor a {
+    color: var(--fca-core-text-muted) !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+    
+}
+
+.fca-ui-personal-item a:hover,
+.fca-ui-personal-item .elementor-text-editor a:hover {
+    color: var(--fca-core-primary) !important;
+}
+
+/* SEPARADORES HORIZONTALES */
+.fca-ui-personal-divider {
+    border-top: 1px solid var(--fca-core-border) !important;
+}
+
+.fca-ui-personal-divider * {
+    display: none !important;
+}
+
+/* Separación horizontal entre ambas tarjetas */
+.fca-ui-objetivos-card {
+    margin-right: 12px !important;
+}
+
+.fca-ui-personal-card {
+    margin-left: 12px !important;
+}
+
+/* ==========================================================================
+   MODAL DE GRUPOS DE INVESTIGACIÓN (HEREDA CLASES DEL CORE)
+   ========================================================================== */
+.fca-groups-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fca-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: var(--fca-core-surface-alt);
+    border: 1px solid var(--fca-core-border);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-family: var(--fca-core-font-main);
+}
+
+.fca-group-item:hover {
+    border-color: var(--fca-core-primary);
+    transform: translateX(4px);
+}
+
+.fca-group-info {
+    flex-grow: 1;
+    padding-right: 16px;
+}
+
+.fca-group-name {
+    font-weight: 700;
+    color: var(--fca-core-primary);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.fca-group-desc {
+    font-size: 12.5px;
+    color: var(--fca-core-text-muted);
+}
+
+.fca-group-btn {
+    background: var(--fca-core-primary);
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+    font-family: var(--fca-core-font-heading);
+}
+
+.fca-group-btn:hover {
+    background: var(--fca-core-primary-hover);
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   ADAPTABILIDAD MÓVIL (RESPONSIVE DE ALTO RENDIMIENTO)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* 1. Sección Intro */
+    .fca-ui-intro-heading h1,
+    .fca-ui-intro-heading h2,
+    .fca-ui-intro-heading h3,
+    .fca-ui-intro-heading h4,
+    .fca-ui-intro-heading h5,
+    .fca-ui-intro-heading h6,
+    .fca-ui-intro-heading .elementor-heading-title {
+        font-size: 1.5rem !important;
+    }
+
+    .fca-ui-intro-text,
+    .fca-ui-intro-text p {
+        font-size: 1.05rem !important;
+        line-height: 1.65 !important;
+        margin-right: 0 !important;
+    }
+
+    .fca-ui-mv-card {
+        margin: 0 4px 16px 4px !important;
+        width: calc(100% - 8px) !important;
+        box-sizing: border-box !important;
+    }
+
+    .fca-ui-mv-title,
+    .fca-ui-mv-title .elementor-heading-title {
+        font-size: 1.05rem !important;
+    }
+
+    .fca-ui-mv-text,
+    .fca-ui-mv-text p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 2. Sección Director */
+    .fca-ui-director-section {
+        padding: 20px 16px !important;
+        margin: 20px 4px !important;
+        width: calc(100% - 8px) !important;
+        box-sizing: border-box !important;
+    }
+
+    .fca-ui-director-name h1,
+    .fca-ui-director-name h2,
+    .fca-ui-director-name h3,
+    .fca-ui-director-name h4,
+    .fca-ui-director-name h5,
+    .fca-ui-director-name h6,
+    .fca-ui-director-name .elementor-heading-title {
+        font-size: 1.5rem !important;
+    }
+
+    .fca-ui-director-photo img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 230px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .fca-ui-bio-text,
+    .fca-ui-bio-text p {
+        font-size: 1.05rem !important;
+        line-height: 1.65 !important;
+    }
+
+    .fca-ui-bio-contact .elementor-widget-container {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        font-size: 1rem !important;
+    }
+
+    /* 3. Pilares de Investigación */
+    .fca-ui-pilar-card,
+    .fca-ui-pilar-card:nth-child(2) {
+        margin: 0 4px 20px 4px !important;
+        width: calc(100% - 8px) !important;
+        box-sizing: border-box !important;
+    }
+
+    .fca-ui-pilar-card > .elementor-widget-wrap,
+    .fca-ui-pilar-card > .elementor-column-wrap,
+    .fca-ui-pilar-card > .elementor-element-populated {
+        min-height: auto !important;
+        padding: 22px 18px !important;
+    }
+
+    .fca-ui-pilar-title,
+    .fca-ui-pilar-title .elementor-heading-title {
+        font-size: 1.3rem !important;
+    }
+
+    .fca-ui-pilar-desc,
+    .fca-ui-pilar-desc p {
+        font-size: 1rem !important;
+        line-height: 1.65 !important;
+    }
+
+    .fca-ui-pilar-btn a,
+    .fca-ui-pilar-btn button,
+    .fca-ui-pilar-btn .elementor-button,
+    .fca-ui-btn-grupos a,
+    .fca-ui-btn-grupos button,
+    .fca-ui-btn-grupos .elementor-button {
+        font-size: 1rem !important;
+        padding: 14px 20px !important;
+    }
+
+    /* 4. Objetivos y Personal Administrativo */
+    .fca-ui-objetivos-card,
+    .fca-ui-personal-card {
+        margin: 0 4px 20px 4px !important;
+        width: calc(100% - 8px) !important;
+        padding: 22px 18px !important;
+        box-sizing: border-box !important;
+    }
+
+    .fca-ui-objetivos-title,
+    .fca-ui-objetivos-title .elementor-heading-title {
+        font-size: 1.4rem !important;
+    }
+
+    .fca-ui-objetivos-lista ul li,
+    .fca-ui-objetivos-lista .elementor-text-editor ul li {
+        font-size: 1.4rem !important;
+        line-height: 1.65 !important;
+    }
+
+    .fca-ui-personal-title,
+    .fca-ui-personal-title .elementor-heading-title {
+        font-size: 1.25rem !important;
+    }
+
+    .fca-ui-personal-item strong,
+    .fca-ui-personal-item b {
+        font-size: 1.05rem !important;
+    }
+
+    .fca-ui-personal-item a {
+        font-size: 0.98rem !important;
+    }
+
+    /* 5. Modal de Grupos */
+    .fca-group-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        padding: 16px !important;
+    }
+
+    .fca-group-name {
+        font-size: 1.05rem !important;
+    }
+
+    .fca-group-desc {
+        font-size: 0.92rem !important;
+    }
+
+    .fca-group-btn {
+        width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        font-size: 0.95rem !important;
+        padding: 10px 16px !important;
+    }
+}
+</style>
+
+<!-- MODAL DE GRUPOS DE INVESTIGACIÓN (Estructura 100% adaptada al Core) -->
+<div class="fca-core-modal-overlay" id="modal-grupos-investigacion">
+    <div class="fca-core-modal-content" style="max-width: 620px;">
+        <button type="button" class="fca-core-modal-close" id="btn-cerrar-modal-grupos">&times;</button>
+        <h3 class="fca-core-modal-title">Grupos de Investigación</h3>
+        <p class="fca-core-modal-desc">Selecciona un grupo para consultar su catálogo detallado y líneas de trabajo:</p>
+
+        <div class="fca-groups-list">
+            <div class="fca-group-item">
+                <div class="fca-group-info">
+                    <span class="fca-group-name">Gestión de la Innovación y Tecnología (GIT)</span>
+                    <span class="fca-group-desc">Innovación, transformación digital y gestión tecnológica empresarial.</span>
+                </div>
+                <a href="ENLACE_CATALOGO_GIT" class="fca-group-btn" target="_blank">Ver Catálogo</a>
+            </div>
+            <div class="fca-group-item">
+                <div class="fca-group-info">
+                    <span class="fca-group-name">Emprendimiento y Desarrollo Sostenible (EDES)</span>
+                    <span class="fca-group-desc">Modelos de negocio e impacto ambientalmente sustentable.</span>
+                </div>
+                <a href="ENLACE_CATALOGO_EDES" class="fca-group-btn" target="_blank">Ver Catálogo</a>
+            </div>
+            <div class="fca-group-item">
+                <div class="fca-group-info">
+                    <span class="fca-group-name">Marketing Estratégico y Consumidor</span>
+                    <span class="fca-group-desc">Análisis del mercado y comportamiento omnicanal del consumidor.</span>
+                </div>
+                <a href="ENLACE_CATALOGO_MARKETING" class="fca-group-btn" target="_blank">Ver Catálogo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    function initModal() {
+        var modal = document.getElementById('modal-grupos-investigacion');
+        var btnCerrar = document.getElementById('btn-cerrar-modal-grupos');
+
+        var btnAbrir = document.querySelector('.fca-ui-btn-grupos .elementor-button') ||
+                       document.querySelector('.fca-ui-btn-grupos a') ||
+                       document.querySelector('.fca-ui-btn-grupos button') ||
+                       document.querySelector('.fca-ui-btn-grupos');
+
+        if (!modal || !btnAbrir || !btnCerrar) return;
+
+        btnAbrir.addEventListener('click', function (e) {
+            e.preventDefault();
+            modal.classList.add('active');
+        });
+
+        btnCerrar.addEventListener('click', function () {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) modal.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') modal.classList.remove('active');
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initModal);
+    } else {
+        initModal();
+    }
+})();
+</script>
