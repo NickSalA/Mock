@@ -327,6 +327,7 @@ button:focus-visible {
 .research-link-list a:hover { color: var(--research-gold); }
 
 .research-breadcrumb { width: min(1200px, calc(100% - 48px)); margin: 0 auto; padding: 22px 0 0; color: var(--research-muted); font-size: .86rem; }
+.research-main > .research-breadcrumb { width: 100%; }
 .research-breadcrumb a { color: var(--research-ink); font-weight: 700; text-decoration: none; }
 .research-breadcrumb span { margin: 0 7px; }
 
@@ -361,6 +362,31 @@ button:focus-visible {
 .research-footer strong { color: #fff; }
 .research-footer a { color: #fff; text-underline-offset: 3px; }
 
+@media (max-width: 1080px) {
+    .research-topbar-inner { padding-right: 24px; padding-left: 24px; }
+    .research-hero-inner, .research-main, .research-breadcrumb, .research-footer-inner { width: min(100% - 48px, 1200px); }
+    .research-hero h1 { max-width: min(62%, 640px); font-size: clamp(2.7rem, 5.3vw, 4.1rem); }
+    .research-hero p:not(.research-kicker), .research-hero-actions, .research-hero-metrics { max-width: 59%; }
+    .research-hero-metrics div { min-width: 0; flex: 1; padding-right: 14px; }
+    .research-orbit { right: -2%; width: min(36vw, 350px); }
+    .research-hub-card { min-height: 320px; padding: 32px; }
+    .research-panel { padding: 36px; }
+}
+
+@media (max-width: 900px) {
+    .research-hero-inner { padding-top: 64px; }
+    .research-hero h1, .research-hero p:not(.research-kicker), .research-hero-actions, .research-hero-metrics { max-width: 100%; }
+    .research-orbit { position: relative; top: auto; right: auto; width: min(58vw, 360px); margin: 54px auto 0; transform: none; }
+    .research-section-heading, .research-duo, .research-content-grid { grid-template-columns: 1fr; }
+    .research-section-heading { gap: 14px; }
+    .research-section-heading > p { max-width: 630px; }
+    .research-content-grid { gap: 22px; }
+    .research-aside { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, .75fr); column-gap: 30px; align-items: center; }
+    .research-aside h2 { grid-column: 1; }
+    .research-aside p { grid-column: 1; }
+    .research-aside .research-button { grid-column: 2; grid-row: 1 / span 2; margin-top: 0; }
+}
+
 @media (max-width: 760px) {
     .research-topbar-inner { min-height: auto; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 16px; padding-bottom: 16px; }
     .research-nav { width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 3px; }
@@ -376,9 +402,31 @@ button:focus-visible {
     .research-hero-metrics { margin-top: 42px; flex-wrap: wrap; }
     .research-hero-metrics div { min-width: 33%; padding-right: 16px; }
     .research-orbit { position: relative; top: auto; right: auto; width: min(78vw, 330px); margin: 46px auto 0; transform: none; }
+    .research-aside { display: block; }
+    .research-aside .research-button { margin-top: 20px; }
     .research-panel, .research-content { padding: 25px 22px; }
     .research-page-title { padding: 30px 0 35px; }
     .research-footer-inner { flex-direction: column; }
+}
+
+@media (max-width: 520px) {
+    .research-topbar-inner { padding-right: 18px; padding-left: 18px; }
+    .research-brand { font-size: .84rem; }
+    .research-nav { gap: 15px; }
+    .research-hero-inner, .research-main, .research-breadcrumb, .research-footer-inner { width: min(100% - 36px, 1200px); }
+    .research-hero h1 { font-size: clamp(2.15rem, 10.5vw, 3rem); line-height: 1.04; }
+    .research-hero p:not(.research-kicker) { margin-top: 20px; font-size: 1rem; line-height: 1.65; }
+    .research-hero-actions { gap: 10px; margin-top: 26px; }
+    .research-hero-actions .research-button { flex: 1 1 145px; }
+    .research-hero-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 42px; }
+    .research-hero-metrics div { min-width: 0; padding: 14px 8px 0 0; }
+    .research-hero-metrics strong { font-size: 1.4rem; }
+    .research-hero-metrics span { font-size: .66rem; line-height: 1.35; }
+    .research-orbit { width: min(90vw, 320px); margin-top: 40px; }
+    .research-section-heading { margin-bottom: 28px; padding-bottom: 18px; }
+    .research-hub-card { border-radius: 15px; }
+    .research-page-title p { font-size: 1rem; }
+    .research-breadcrumb { padding-top: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
